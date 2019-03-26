@@ -12,7 +12,7 @@
 using namespace std;
 int main(int argc, const char * argv[]) {
     Array<int> *array = new Array<int>();
-    for(int i = 0; i < 11; i++){
+    for(int i = 0; i < 10; i++){
         array->addFirst(i);
     }
     array->print();
