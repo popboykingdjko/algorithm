@@ -15,9 +15,9 @@ void swag(int& a, int& b){
     b=temp;
 }
 
-void print(int array[]){
+void print(int array[], int length){
     //cout<<sizeof(array) <<endl;
-    for(int i = 0; i < 16; i++){
+    for(int i = 0; i < length; i++){
         cout <<array[i] << " ";
     }
 }
@@ -26,7 +26,7 @@ int main(int argc, const char * argv[]) {
     int length = sizeof(array) / sizeof(array[0]);
     int temp = length;
     //cout << sizeof(array)<< endl;
-    cout << length << endl;
+    //cout << length << endl;
     for(int i=0; i < temp-1; i++){
         for(int j =0; j < length-1-i; j++){
             if(array[j] > array[j+1]){
@@ -35,7 +35,7 @@ int main(int argc, const char * argv[]) {
         }
        temp--;
     }
-    print(array);
+    print(array,length);
     cout << endl;
     return 0;
 }
